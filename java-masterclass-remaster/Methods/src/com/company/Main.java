@@ -11,7 +11,7 @@ public class Main {
         calculateScore();
 
         if (gameOver) {
-            score = 10000;
+            score = 20000;
             levelCompleted = 8;
             bonus = 200;
             System.out.println("Score: " + score + "\nLevelCompleted: " + levelCompleted +
