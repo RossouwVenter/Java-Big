@@ -17,7 +17,7 @@ public class Main {
             }
 //            System.out.println("you do not have the high score!");
             int secondTopScore = 81;
-//            paranthases makes reading beter
+//            paranthases makes reading better
             if ((topScore > secondTopScore) && (topScore < 100)){
                 System.out.println("Greater than second top score and less than 100");
             }
