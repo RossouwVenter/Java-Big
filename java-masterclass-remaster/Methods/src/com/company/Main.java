@@ -8,27 +8,22 @@ public class Main {
         int levelCompleted = 5;
         int bonus = 100;
 
-        calculateScore();
+        int highScore = calculateScore(gameOver,score,levelCompleted,bonus);
+        System.out.println("Your final score was " + highScore);
 
-        if (gameOver) {
-            score = 20000;
-            levelCompleted = 8;
-            bonus = 200;
-            System.out.println("Score: " + score + "\nLevelCompleted: " + levelCompleted +
-                    "\nBonus: " + bonus + "\nFinal Score: " + (score + levelCompleted + bonus));
-        }
+
+        highScore = calculateScore(true,10000,8,200);
+        System.out.println("Your final score was " + highScore);
 
     }
 
-    public static void calculateScore() {
-        boolean gameOver = true;
-        int score = 800;
-        int levelCompleted = 5;
-        int bonus = 100;
+    public static int calculateScore(boolean gameOver,int score, int levelCompleted, int bonus) {
 
         if (gameOver) {
             int finalScore = score + (levelCompleted * bonus);
-            System.out.println("Your final score was " + finalScore);
+            return finalScore;
+        }else {
+            return -1;
         }
     }
 
