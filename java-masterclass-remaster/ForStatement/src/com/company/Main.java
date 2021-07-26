@@ -21,7 +21,7 @@ public class Main {
                 count++;
                 System.out.println("Number " + i + " is a prime number");
                 if (count == 3){
-                    System.out.println("Exiting for loop. ");
+                    System.out.println("Exiting for loop");
                     break;
                 }
             }
