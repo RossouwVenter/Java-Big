@@ -16,10 +16,6 @@ public class Exercise15 {
             stored /= 10;
         }
 
-        if (number == reverse) {
-            return true;
-        }else {
-            return false;
-        }
+        return number == reverse;
     }
 }
