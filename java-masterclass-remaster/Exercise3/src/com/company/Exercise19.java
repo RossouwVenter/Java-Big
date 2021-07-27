@@ -2,10 +2,13 @@ package com.company;
 
 public class Exercise19 {
 
+    public static void main(String[] args) {
+        System.out.println(hasSameLastDigit(1,1,2));
+    }
+
     public static boolean hasSameLastDigit(int parameterOne,int parameterTwo,int parameterThree){
 
-        if ((parameterOne <= 10 || parameterOne >= 1000) && (parameterTwo <= 10 || parameterTwo >= 1000)
-                && (parameterThree <= 10 || parameterThree >= 1000)) {
+        if (isValid(parameterOne) && (isValid(parameterTwo)) && (isValid(parameterThree))) {
             int lastDigitFirst = parameterOne % 10;
             int lastDigitSecond = parameterTwo % 10;
             int lastDigitThird = parameterThree % 10;
