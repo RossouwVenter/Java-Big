@@ -7,7 +7,7 @@ public class ReaderUserInputChallenge {
         Scanner scanner = new Scanner(System.in);
 
         int number = 1;
-        while (number >= 1){
+        while (number >= 1 && number <= 10){
             System.out.println("Enter the number #" + number);
             int inputNum = scanner.nextInt();
             if (inputNum == number){
