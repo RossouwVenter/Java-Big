@@ -12,7 +12,7 @@ public class Exercise24 {
 
         if ((bigCount < 0) || (smallCount < 0) || (goal < 0)) {
             return false;
-        } else {
+        }
 
             for (int i = smallCount *1; i >= 0; i--){
                 for (int j = bigCount * 5; j >= 0; i -= 5){
@@ -22,7 +22,7 @@ public class Exercise24 {
                 }
             }
             return false;
-        }
+
 
     }
 }
