@@ -26,7 +26,7 @@ public class Exercise29 {
     }
 
     public double getSubtractionResult(){
-        return secondNumber - firstNumber;
+        return firstNumber - secondNumber;
     }
 
     public double getMultiplicationResult(){
