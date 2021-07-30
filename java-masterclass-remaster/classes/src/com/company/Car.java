@@ -15,7 +15,7 @@ public class Car {
         if (validModel.equals("carrera") || validModel.equals("commodore")){
             this.model = model;
         } else {
-            this.model = "Unkown";
+            this.model = "Unknown";
         }
 
     }
