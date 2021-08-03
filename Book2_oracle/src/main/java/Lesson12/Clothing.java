@@ -28,9 +28,7 @@ public class Clothing {
         this.price = price;
         this.size = size;
         this.type = type;
-    }
-
-    
+    }   
     
     
 //    public String getColor() {
