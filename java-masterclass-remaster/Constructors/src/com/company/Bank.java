@@ -5,20 +5,25 @@ public class Bank {
     private double balance;
     private String customerName;
     private String email;
-    private int phoneNumber;
+    private String phoneNumber;
 
     public Bank(){
-        this(123,20.50,"default Name","default address",00);
+        this(123,20.50,"default Name","default address","00");
         System.out.println("Empty constructor called");
     }
 
-    public Bank(int number, double balance, String customerName, String email,int phoneNumber){
+    public Bank(int number, double balance, String customerName, String email,String phoneNumber){
         System.out.println("Bank constructor with parameters");
         this.number = number;
         this.balance = balance;
         this.customerName = customerName;
         this.email = email;
         this.phoneNumber = phoneNumber;
+    }
+
+
+    public Bank(String customerName, String email, String phoneNumber) {
+        this(9999,100.55,customerName,email,phoneNumber);
     }
 
     public void setNumber(int number) {
@@ -37,7 +42,7 @@ public class Bank {
         this.email = email;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -57,7 +62,7 @@ public class Bank {
         return email;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
