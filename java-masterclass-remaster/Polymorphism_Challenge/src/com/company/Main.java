@@ -1,7 +1,7 @@
 package com.company;
 
 class Car{
-    public boolean engine;
+    private boolean engine;
     private int cylinders;
     private String name;
     private int wheels;
