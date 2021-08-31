@@ -1,11 +1,15 @@
-package com.company;
+package Test;
 
 import java.util.ArrayList;
 
+
+/**
+ * Created by dev on 23/08/15.
+ */
 public class GroceryList {
     private ArrayList<String> groceryList = new ArrayList<String>();
 
-    public void addGroceryItem(String item){
+    public void addGroceryItem(String item) {
         groceryList.add(item);
     }
 
@@ -16,12 +20,12 @@ public class GroceryList {
         }
     }
 
-    public void modifyGroceryItem(int position,String newItem){
-        groceryList.set(position,newItem);
-        System.out.println("Grocery item " + (position+1) + " has been modified");
+    public void modifyGroceryItem(int position, String newItem) {
+        groceryList.set(position, newItem);
+        System.out.println("Grocery item " + (position+1) + " has been modified.");
     }
 
-    public void removeGroceryItem(int position){
+    public void removeGroceryItem(int position) {
         String theItem = groceryList.get(position);
         groceryList.remove(position);
     }
