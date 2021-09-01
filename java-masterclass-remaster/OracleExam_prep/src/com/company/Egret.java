@@ -6,7 +6,7 @@ public class Egret {
 
         public Egret() {
 //            this("white");
-            this.color = "Orange";
+//            this.color = "Orange";
         }
 
         public Egret(String color) {
@@ -15,7 +15,7 @@ public class Egret {
         }
 
         public static void main(String[] args) {
-            Egret e = new Egret();
+            Egret e = new Egret("White");
             System.out.println("Color:" + e.color);
         }
 
