@@ -15,7 +15,11 @@ public class Branch {
         return name;
     }
 
-    public boolean newCustomer(String customerName,double initialAmount){
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
+
+    public boolean newCustomer(String customerName, double initialAmount){
         if(findCustomer(customerName) == null){
             this.customers.add(new Customer(customerName,initialAmount));
             return true;
@@ -24,7 +28,9 @@ public class Branch {
         return false;
     }
 
-    public boolean addCustomerTransaction(String customerName,double amount){
+
+
+    public boolean addCustomerTransaction(String customerName, double amount){
         Customer existingCustomer = findCustomer(customerName);
 
         if(existingCustomer != null){
