@@ -12,7 +12,7 @@ public class Main {
 	 bird.eat();
 	 bird.fly();
 
-	 Penguin penguin = new Penguin("Penquin");
+	 Penguin penguin = new Penguin("Penguin");
 	 penguin.fly();
     }
 }
