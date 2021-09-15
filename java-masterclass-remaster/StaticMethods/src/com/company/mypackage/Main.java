@@ -12,8 +12,8 @@ public class Main {
 //        StaticTest thirdInstance = new StaticTest("3nd Instance");
 //        System.out.println(thirdInstance.getName() + " is instance number" + StaticTest.getNumInstance());
 //        java com.company._static.Main
-        int awnser = multiply(6);
-        System.out.println("The Awnser is " + awnser);
+        int answer = multiply(6);
+        System.out.println("The Answer is " + answer);
         System.out.println("Multiplier is " + multiplier);
 
     }
