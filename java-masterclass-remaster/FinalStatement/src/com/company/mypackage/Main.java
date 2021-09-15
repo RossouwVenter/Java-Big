@@ -17,11 +17,16 @@ public class Main {
 //        Math m = new Math();
 
         int pw = 678392;
-        Password password = new Password(pw);
+        Password password = new ExtendedPassword(pw);
         password.storePassword();
 
         password.letMeIn(83920);
         password.letMeIn(998723);
         password.letMeIn(678392);
+
+        System.out.println("Main method called");
+        SIBTest test = new SIBTest();
+        test.someMethod();
+        System.out.println("Owner is " + SIBTest.owner);
     }
 }
