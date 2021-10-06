@@ -1,4 +1,4 @@
-module com.example.todolist {
+module com.rossouw.todolist {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
