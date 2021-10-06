@@ -1,6 +1,8 @@
 package com.rossouw.todolist;
 
 import com.rossouw.todolist.datamodel.TodoItem;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
@@ -38,8 +40,19 @@ public class Controller {
         todoItems.add(item4);
         todoItems.add(item5);
 
+        todoListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<TodoItem>() {
+            @Override
+            public void changed(ObservableValue<? extends TodoItem> observableValue, TodoItem odlValue, TodoItem newValue) {
+               if(newValue != null){
+                   TodoItem item = todoListView.getSelectionModel().getSelectedItem();
+                   itemDetailsTextArea.setText(item.getDetails());
+               }
+            }
+        });
+
         todoListView.getItems().setAll(todoItems);
         todoListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        todoListView.getSelectionModel().selectFirst();
     }
    @FXML
     public void handleClickListView(){
