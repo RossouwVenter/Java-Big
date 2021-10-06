@@ -4,6 +4,7 @@ import com.rossouw.todolist.datamodel.TodoItem;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextArea;
@@ -21,6 +22,8 @@ public class Controller {
 
     @FXML
     private TextArea itemDetailsTextArea;
+    @FXML
+    private Label deadlineLabel;
 
     public void initialize(){
         TodoItem item1 = new TodoItem("Mail birthday card","Buy a 30th birthday card for Jhon",
@@ -47,7 +50,7 @@ public class Controller {
                if(newValue != null){
                    TodoItem item = todoListView.getSelectionModel().getSelectedItem();
                    itemDetailsTextArea.setText(item.getDetails());
-                   DateTimeFormatter df = DateTimeFormatter.ofPattern( "MMMM d, yyyy");
+                   DateTimeFormatter df = DateTimeFormatter.ofPattern( "MMMM d, yyyy"); // "d M yy");
                    deadlineLabel.setText(df.format(item.getDeadline()));
                }
             }
