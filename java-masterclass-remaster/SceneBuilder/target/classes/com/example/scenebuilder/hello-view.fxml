@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane stylesheets="@../../../../Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuilder.HelloController">
+<GridPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuilder.HelloController">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -17,7 +17,7 @@
    </rowConstraints>
    <children>
       <Button mnemonicParsing="false" text="Help" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-      <Button mnemonicParsing="false" onAction="#handleAction" style="-fx-background-color: white;" text="Ok" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#handleAction" text="Ok" GridPane.rowIndex="1" />
       <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
       <Label fx:id="label" text="My Label" />
    </children>
